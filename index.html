@@ -816,7 +816,7 @@
       ss.innerHTML = fileNames.map((e) =>
        '<tr>\
           <td>\
-          ' + e + '<button onclick="saveFile(\'' + e + '\')" style="float: right;">Download</button>\
+          ' + e + '<button onclick="saveFile(\'' + e.replace(/'/g, "\\'") + '\')" style="float: right;">Download</button>\
           </td>\
         </tr>'
       ).join('');
